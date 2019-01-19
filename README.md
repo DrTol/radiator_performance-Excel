@@ -26,7 +26,7 @@ This Excel/VBA tool makes use of other original open-source project:
 - [XSteam_VBA by Holmgren M.](https://www.me.ua.edu/me215/f07.woodbury/ExcelStuff/XSteam-v2a.xlsm) | Author Description: XSteam provides accurate steam and water properties from 0 - 1000 bar and from 0 - 2000 deg C according to the standard IAPWS IF-97. For accuracy of the functions in different regions see IF-97 (www.iapws.org).
 
 ## How2Cite:
-1. Tol, Hİ. radiator_performance-Excel. DOI: XXX. GitHub Repository 2018; https://github.com/DrTol/radiator_performance-Excel
+1. Tol, Hİ. radiator_performance-Excel. DOI: 10.5281/zenodo.2544284. GitHub Repository 2018; https://github.com/DrTol/radiator_performance-Excel
 2. Tol, Hİ. District heating in areas with low energy houses - Detailed analysis of district heating systems based on low temperature operation and use of renewable energy. PhD Supervisors: Svendsen S. & Nielsen SB. Technical University of Denmark 2015; 204 p. ISBN: 9788778773685.
 
 ## References
