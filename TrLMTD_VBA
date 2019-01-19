@@ -1,0 +1,34 @@
+Function TrLMTD(TrGMTD, Ts, Ta, q2, qo, LMTDo, n)
+'' Calculates the return temperature from the radiator unit (Space heating in Buildings)
+'   emprical equation based on LMTD by Bøhm B.
+'   Ref: Phetteplace - Optimal Design of Piping Systems for District Heating
+'   prepared by Hakan ibrahim Tol, PhD
+
+'' INPUT
+' TrGTMD : [°C] Initial estimate for the return temperature (suggested: use GMTD)
+' Ts     : [°C] Supply temperature at the actual condition
+' Ta     : [°C] Indoor set temperature at the actual condition
+' q2     : [kW] Heat Output at the actual condition
+' qo     : [kW] Heat Output at the design condition
+' LMTDo  : [°C] Logarithmic mean temperature difference at the original condition
+' n      : [-]  Emprical radiator constant
+
+Tr = TrGMTD
+
+fTol = 0.001   ' Termination Tolerance(Iteration)
+Err = 10       ' Initial fake iteration error
+
+Do Until Err < fTol
+    Trout = Ta + ((Ts - Ta) / Exp((q2 / qo) ^ (-1 / n) * (Ts - Tr) / LMTDo))
+
+    Err = Abs(Trout - Tr)
+    Tr = Trout
+Loop
+
+If Trout > Ts Then
+    TrLMTD = CVErr(xlErrNA)
+Else
+    TrLMTD = Trout
+End If
+
+End Function
