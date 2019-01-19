@@ -1,6 +1,5 @@
 # Radiator Return Temperature Calculator
-This Excel tool calculates the radiator return temperature as based on the performance/rating measures making use of LMTD.  
-
+This VBA function/Excel tool calculates the radiator return temperature as based on the performance/rating measures making use of LMTD.  
 ## Table of Contents
 - [Features](README.md#features)
 - [How2Use](README.md#how2use)
@@ -10,7 +9,7 @@ This Excel tool calculates the radiator return temperature as based on the perfo
 - [References](README.md#references)
 
 ## Features
-The main idea here is to develop simple and reliable emprical models for residential radiator units so to be used in system level modelling (i.e. at district heating simulations). Hence, this Matlab models estimate the radiator behaviour in terms of return temperature at different operational conditions (e.g. changing heat demand rate at different degrees of supply temperature).
+The main idea here is to develop simple and reliable emprical models for residential radiator units so to be used in system level modelling (i.e. at district heating simulations). Hence, this VBA function estimate the radiator behaviour in terms of return temperature at different operational conditions (e.g. changing heat demand rate at different degrees of supply temperature).
 
 ## How2Use
 An example Excel file is given: [Example_RadiatorReturnTemperature.xlsm](https://github.com/DrTol/radiator_performance-Excel/blob/master/Example_RadiatorReturnTemperature.xlsm), which illustrates how to use the function developed [TrLMTD_VBA](https://github.com/DrTol/radiator_performance-Excel/blob/master/TrLMTD_VBA)
